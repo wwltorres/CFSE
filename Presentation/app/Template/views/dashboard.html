@@ -1,0 +1,255 @@
+<div class="app-view-header">Inicio
+</div>
+<div ng-controller="DashboardController as dashboard" class="container-fluid">
+   <div class="row">
+        <div class="col-md-12">
+            <div class="row row-flush text-center text-muted m0">
+                <div class="col-xs-12 col-md-2">
+                    <div class="panel panel-default">
+                        <div ripple="" ng-click="hpanel = [true, false, false, false, false]" ng-class="{'bg-success': hpanel[0]}" class="bb br pv-xxl clickable">
+                            <em class="fa fa-lock fa-2x mv"></em>
+                            <span class="ripple"></span>
+                            <p>Seguridad</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <div class="panel panel-default">
+                        <div ripple="" ng-click="hpanel = [false, true, false, false, false]" ng-class="{'bg-purple': hpanel[1]}" class="bb br pv-xxl clickable">
+                            <em class="fa fa-user fa-2x mv"></em>
+                            <span class="ripple"></span>
+                            <p>Patronos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <div class="panel panel-default">
+                        <div ripple="" ng-click="hpanel = [false, false, true, false, false]" ng-class="{'bg-pink': hpanel[2]}" class="bb-lg br pv-xxl clickable">
+                            <em class="fa fa-medkit fa-2x mv"></em>
+                            <span class="ripple"></span>
+                            <p>Proveedores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <div class="panel panel-default">
+                        <div ripple="" ng-click="hpanel = [false, false, false, true, false]" ng-class="{'bg-amber': hpanel[3]}" class="bb-lg br pv-xxl clickable">
+                            <em class="fa fa-bed fa-2x mv"></em>
+                            <span class="ripple"></span>
+                            <p>Lesionados</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <div class="panel panel-default">
+                        <div ripple="" ng-click="hpanel = [false, false, false, false, true]" ng-class="{'bg-primary': hpanel[4]}" class="bb-lg br pv-xxl clickable">
+                            <em class="fa fa-table fa-2x mv"></em>
+                            <span class="ripple"></span>
+                            <p>Reportes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row" ng-if="hpanel[1]">
+				<div class="col-md-10">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="panel-title" style="font-size:20px;">
+								<em class="fa fa-user fa-lg text-muted pull-right" style="padding-top:8px;"></em>
+								Patronos
+							</div>
+							<div class="panel-body">
+								<form class="" action="index.html" method="post">
+									<div class="panel-heading">
+										<div class="panel-title">
+											<u>
+												Informaci&oacute;n del Patrono
+											</u>
+										</div>
+										<div class="panel-body">
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Nombre del Patrono</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Direcci&oacute; Postal</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Correo Electr&oacute;nico</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Nombre de la Compa&ntilde;&iacute;a</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Seguro Social Patronal</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">N&uacute;mero de Poliza de Seguro</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Tipo de Empleador</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Direcci&oacute;n F&iacute;sica</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">N&uacute;mero de Contacto</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Tipo de Negocio</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset></fieldset>
+										</div>
+									</div>
+									<div class="panel-heading">
+										<div class="panel-title">
+											<u>
+												Informaci&oacute;n del Empleado
+											</u>
+										</div>
+										<div class="panel-body">
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Seguro Social</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Direcci&oacute; F&iacute;sica</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Primer Apellido</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Direcci&oacute;n Postal</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Segundo Apellido</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">N&uacute;mero de Contacto</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Primer Nombre</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Fax</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Segundo Nombre</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<label for="" class="col-sm-2 control-label">Correo Electr&oacute;nico</label>
+														<div class="col-md-8">
+															<input type="text" name="name" value="" class="form-control">
+														</div>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="col-sm-12 pull-right">
+													<input type="button" name="name" value="Enviar" ripple="" class="ml btn btn-oval btn-primary">
+												</div>
+											</fieldset>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>

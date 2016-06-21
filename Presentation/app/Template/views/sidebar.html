@@ -1,0 +1,45 @@
+<!-- START Sidebar-->
+<div class="sidebar-wrapper">
+   <div ui-sidebar="" class="sidebar">
+      <div class="sidebar-nav">
+         <ul class="nav">
+            <!-- Iterates over all sidebar items-->
+            <li class="nav-heading">
+               <span translate="sidebar.heading.HEADER" class="text-muted">Main Navigation</span>
+            </li>
+            <li ng-class="{active:$state.includes('app')}">
+               <a href="" title="Layouts" ripple="">
+                  <em class="sidebar-item-icon icon-layout"></em>
+                  <em class="sidebar-item-caret fa pull-right fa-angle-right"></em>
+                  <span>Layouts</span>
+               </a>
+               <ul class="nav sidebar-subnav">
+                  <li class="sidebar-subnav-header">
+                     <a>
+                        <em class="sidebar-item-icon fa fa-angle-right"></em>Layouts</a>
+                  </li>
+                  <li ui-sref-active="active">
+                     <a ui-sref="app.dashboard" title="Default" ripple="">
+                        <em class="sidebar-item-icon"></em>
+                        <span>Default</span>
+                     </a>
+                  </li>
+                  <li ui-sref-active="active">
+                     <a ui-sref="app-dock.dashboard" title="Docked" ripple="">
+                        <em class="sidebar-item-icon"></em>
+                        <span>Docked</span>
+                     </a>
+                  </li>
+                  <li ui-sref-active="active">
+                     <a ui-sref="app-fh.columns" title="Full Height" ripple="">
+                        <em class="sidebar-item-icon"></em>
+                        <span>Full Height</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </div>
+</div>
+<!-- END Sidebar-->

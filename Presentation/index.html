@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<!--[if IE 9 ]>    <html class="ie9" lang="en" ng-app="app"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" ng-app="app" ng-strict-di>
+<!--<![endif]-->
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <title data-ng-bind="pageTitle()"></title>
+   <!-- build:css app/css/application.css-->
+  <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" />
+  <link href="bower_components/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link id="mainstyles" rel="stylesheet" href="assets/css/styles.css">
+
+   <!-- endbuild-->
+</head>
+
+<body ng-cloak="" ng-class="{ 'layout-fixed' : app.layout.isFixed, 'layout-boxed' : app.layout.isBoxed, 'layout-dock' : app.layout.isDocked, 'layout-material': app.layout.isMaterial, 'aside-offscreen' : app.sidebar.isOffscreen, 'aside-mini' : app.sidebar.isMini, 'aside-right' : app.sidebar.isRight, 'footer-hidden': app.footer.hidden, 'in-app': !$state.includes('page')}">
+  <div data-ui-view="" data-autoscroll="false" class="app-container"></div>
+  
+  <!-- build:vendor app/js/vendor.js-->
+  <script src="app/template/vendor/modernizr/modernizr.custom.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-translate/angular-translate.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-permission/dist/angular-permission.js"></script>
+  <script src="bower_components/angular-ui-mask/dist/mask.js"></script>
+  <script src="bower_components/angular-ui-indeterminate/dist/indeterminate.js"></script>
+  <script src="bower_components/angular-ui-uploader/dist/uploader.js"></script>
+  <script src="bower_components/angular-translate-loader-url/angular-translate-loader-url.js"></script>
+  <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+  <script src="bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+  <script src="bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+  <!-- endbuild-->
+  <!-- build:js app/js/application.js-->
+  <script src="app/app.module.js"></script>
+  <script src="app/app.run.js"></script>
+  <!-- template scripts: scripts from the Naut template-->
+  <script src="app/template/modules/common/directives/animate-enabled.directive.js"></script>
+  <script src="app/template/modules/common/directives/chained-animation.directive.js"></script>
+  <script src="app/template/modules/common/directives/fullscreen.directive.js"></script>
+  <script src="app/template/modules/common/directives/reset-key.directive.js"></script>
+  <script src="app/template/modules/common/services/browser-detection.service.js"></script>
+  <script src="app/template/modules/common/services/support.service.js"></script>
+  <script src="app/template/modules/common/services/touch-drag.service.js"></script>
+  <script src="app/template/modules/dashboard/dashboard.controller.js"></script>
+  <script src="app/template/modules/layermorph/layer-morph.directive.js"></script>
+  <script src="app/template/modules/layermorph/layer-morph.service.js"></script>
+  <script src="app/template/modules/layout/header-nav.controller.js"></script>
+  <script src="app/template/modules/layout/ui-sidebar.directive.js"></script>
+  <script src="app/template/modules/loadingbar/loadingbar.config.js"></script>
+  <script src="app/template/modules/loadingbar/loadingbar.run.js"></script>
+  <script src="app/template/modules/ripple/ripple.directive.js"></script>
+  <script src="app/template/modules/routes/routes.config.js"></script>
+  <script src="app/template/modules/routes/routes.provider.js"></script>
+  <script src="app/template/modules/routes/routes.run.js"></script>
+  <script src="app/template/modules/translator/translator.config.js"></script>
+  <script src="app/template/modules/translator/translator.service.js"></script>
+  <!-- end template scripts -->
+  <!-- app components -->
+  <script src="app/components/layout/app.layout.module.js"></script>
+  <script src="app/components/layout/layoutHeader.component.js"></script>
+  <script src="app/components/layout/layoutFooter.component.js"></script>
+  <!-- end app components -->
+  <!-- endbuild-->
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "cfse",
+  "version": "1.0.0",
+  "description": "CFSE Transaction Portal",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wovenware/CFSE_Trans_Portal.git"
+  },
+  "author": "Carlos Ramirez, Yoshuam Alicea",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Wovenware/CFSE_Trans_Portal/issues"
+  },
+  "homepage": "https://github.com/Wovenware/CFSE_Trans_Portal#readme",
+  "devDependencies": {
+    "del": "^2.2.0",
+    "glob": "^7.0.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-less": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-rev": "^7.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-sync": "^0.1.4",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.2.1",
+    "yargs": "^4.7.1"
+  }
+}

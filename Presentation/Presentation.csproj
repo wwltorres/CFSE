@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11BD7CD1-0FDB-48F9-AD33-94A069F99818}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Presentation</RootNamespace>
+    <AssemblyName>Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\app.module.js" />
+    <Content Include="app\components\layout\layoutFooter.template.html" />
+    <Content Include="app\components\layout\layoutFooter.component.js" />
+    <Content Include="app\components\layout\layoutHeader.template.html" />
+    <Content Include="app\modules\employer\employer.component.js" />
+    <Content Include="app\modules\employer\employer.module.js" />
+    <Content Include="app\modules\employer\employer.template.html" />
+    <Content Include="app\modules\employer\merits.template.html" />
+    <Content Include="app\modules\employer\transaction-tabs.component.js" />
+    <Content Include="app\modules\employer\transaction-tabs.template.html" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\styles.css" />
+    <Content Include="app\components\layout\app.layout.module.js" />
+    <Content Include="assets\img\fondo-logo.png" />
+    <Content Include="gulp.config.js" />
+    <Content Include="gulpfile.js" />
+    <Content Include="logIn\LogIn.html" />
+    <Content Include="logIn\LogIn.html.js" />
+    <Content Include="packages.config" />
+    <Content Include="bower.json" />
+    <Content Include="app\app.run.js" />
+    <Content Include="app\template\modules\common\directives\animate-enabled.directive.js" />
+    <Content Include="app\template\modules\common\directives\chained-animation.directive.js" />
+    <Content Include="app\template\modules\common\directives\fullscreen.directive.js" />
+    <Content Include="app\template\modules\common\directives\reset-key.directive.js" />
+    <Content Include="app\template\modules\common\services\browser-detection.service.js" />
+    <Content Include="app\template\modules\common\services\support.service.js" />
+    <Content Include="app\template\modules\common\services\touch-drag.service.js" />
+    <Content Include="app\template\vendor\modernizr\.bower.json" />
+    <Content Include="app\template\vendor\modernizr\bower.json" />
+    <Content Include="app\template\less\app\common\animate.less" />
+    <Content Include="app\template\less\app\common\font.less" />
+    <Content Include="app\template\less\app\common\loading-bar.less" />
+    <Content Include="app\template\less\app\common\media-queries.less" />
+    <Content Include="app\template\less\app\common\print.less" />
+    <Content Include="app\template\less\app\common\settings.less" />
+    <Content Include="app\template\less\app\components\layermorph.less" />
+    <Content Include="app\template\less\app\components\ripple.less" />
+    <Content Include="app\template\less\app\components\scrollable.less" />
+    <Content Include="app\template\less\app\components\toaster.less" />
+    <Content Include="app\template\less\app\forms\form-extras.less" />
+    <Content Include="app\template\less\app\forms\form-switch.less" />
+    <Content Include="app\template\less\app\icons\feather-icons.less" />
+    <Content Include="app\template\less\app\layout\header.less" />
+    <Content Include="app\template\less\app\layout\layout.less" />
+    <Content Include="app\template\less\app\layout\sidebar.less" />
+    <Content Include="app\template\less\app\reset\bootstrap-reset.less" />
+    <Content Include="app\template\less\app\reset\bootstrap-variables.less" />
+    <Content Include="app\template\less\app\ui\button-extra.less" />
+    <Content Include="app\template\less\app\utils\utils-background.less" />
+    <Content Include="app\template\less\app\utils\utils.less" />
+    <Content Include="app\template\less\styles.less" />
+    <Content Include="app\template\less\bootstrap\alerts.less" />
+    <Content Include="app\template\less\bootstrap\badges.less" />
+    <Content Include="app\template\less\bootstrap\bootstrap.less" />
+    <Content Include="app\template\less\bootstrap\breadcrumbs.less" />
+    <Content Include="app\template\less\bootstrap\button-groups.less" />
+    <Content Include="app\template\less\bootstrap\buttons.less" />
+    <Content Include="app\template\less\bootstrap\carousel.less" />
+    <Content Include="app\template\less\bootstrap\close.less" />
+    <Content Include="app\template\less\bootstrap\code.less" />
+    <Content Include="app\template\less\bootstrap\component-animations.less" />
+    <Content Include="app\template\less\bootstrap\dropdowns.less" />
+    <Content Include="app\template\less\bootstrap\forms.less" />
+    <Content Include="app\template\less\bootstrap\glyphicons.less" />
+    <Content Include="app\template\less\bootstrap\grid.less" />
+    <Content Include="app\template\less\bootstrap\input-groups.less" />
+    <Content Include="app\template\less\bootstrap\jumbotron.less" />
+    <Content Include="app\template\less\bootstrap\labels.less" />
+    <Content Include="app\template\less\bootstrap\list-group.less" />
+    <Content Include="app\template\less\bootstrap\media.less" />
+    <Content Include="app\template\less\bootstrap\mixins.less" />
+    <Content Include="app\template\less\bootstrap\mixins\alerts.less" />
+    <Content Include="app\template\less\bootstrap\mixins\background-variant.less" />
+    <Content Include="app\template\less\bootstrap\mixins\border-radius.less" />
+    <Content Include="app\template\less\bootstrap\mixins\buttons.less" />
+    <Content Include="app\template\less\bootstrap\mixins\center-block.less" />
+    <Content Include="app\template\less\bootstrap\mixins\clearfix.less" />
+    <Content Include="app\template\less\bootstrap\mixins\forms.less" />
+    <Content Include="app\template\less\bootstrap\mixins\gradients.less" />
+    <Content Include="app\template\less\bootstrap\mixins\grid-framework.less" />
+    <Content Include="app\template\less\bootstrap\mixins\grid.less" />
+    <Content Include="app\template\less\bootstrap\mixins\hide-text.less" />
+    <Content Include="app\template\less\bootstrap\mixins\image.less" />
+    <Content Include="app\template\less\bootstrap\mixins\labels.less" />
+    <Content Include="app\template\less\bootstrap\mixins\list-group.less" />
+    <Content Include="app\template\less\bootstrap\mixins\nav-divider.less" />
+    <Content Include="app\template\less\bootstrap\mixins\nav-vertical-align.less" />
+    <Content Include="app\template\less\bootstrap\mixins\opacity.less" />
+    <Content Include="app\template\less\bootstrap\mixins\pagination.less" />
+    <Content Include="app\template\less\bootstrap\mixins\panels.less" />
+    <Content Include="app\template\less\bootstrap\mixins\progress-bar.less" />
+    <Content Include="app\template\less\bootstrap\mixins\reset-filter.less" />
+    <Content Include="app\template\less\bootstrap\mixins\reset-text.less" />
+    <Content Include="app\template\less\bootstrap\mixins\resize.less" />
+    <Content Include="app\template\less\bootstrap\mixins\responsive-visibility.less" />
+    <Content Include="app\template\less\bootstrap\mixins\size.less" />
+    <Content Include="app\template\less\bootstrap\mixins\tab-focus.less" />
+    <Content Include="app\template\less\bootstrap\mixins\table-row.less" />
+    <Content Include="app\template\less\bootstrap\mixins\text-emphasis.less" />
+    <Content Include="app\template\less\bootstrap\mixins\text-overflow.less" />
+    <Content Include="app\template\less\bootstrap\mixins\vendor-prefixes.less" />
+    <Content Include="app\template\less\bootstrap\modals.less" />
+    <Content Include="app\template\less\bootstrap\navbar.less" />
+    <Content Include="app\template\less\bootstrap\navs.less" />
+    <Content Include="app\template\less\bootstrap\normalize.less" />
+    <Content Include="app\template\less\bootstrap\pager.less" />
+    <Content Include="app\template\less\bootstrap\pagination.less" />
+    <Content Include="app\template\less\bootstrap\panels.less" />
+    <Content Include="app\template\less\bootstrap\popovers.less" />
+    <Content Include="app\template\less\bootstrap\print.less" />
+    <Content Include="app\template\less\bootstrap\progress-bars.less" />
+    <Content Include="app\template\less\bootstrap\responsive-embed.less" />
+    <Content Include="app\template\less\bootstrap\responsive-utilities.less" />
+    <Content Include="app\template\less\bootstrap\scaffolding.less" />
+    <Content Include="app\template\less\bootstrap\tables.less" />
+    <Content Include="app\template\less\bootstrap\theme.less" />
+    <Content Include="app\template\less\bootstrap\thumbnails.less" />
+    <Content Include="app\template\less\bootstrap\tooltip.less" />
+    <Content Include="app\template\less\bootstrap\type.less" />
+    <Content Include="app\template\less\bootstrap\utilities.less" />
+    <Content Include="app\template\less\bootstrap\variables.less" />
+    <Content Include="app\template\less\bootstrap\wells.less" />
+    <Content Include="package.json" />
+    <Content Include="app\components\layout\layoutHeader.component.js" />
+    <Content Include="assets\css\styles.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="public\User\EmailValidation.html" />
+    <Content Include="public\User\EmailValidation.html.js" />
+    <Content Include="public\User\ForgotCredential.html.js" />
+    <Content Include="public\User\ForgotCredential.html" />
+    <Content Include="public\User\UserAdd.html" />
+    <Content Include="public\User\UserAdd.html.js" />
+    <Content Include="app\template\modules\dashboard\dashboard.controller.js" />
+    <Content Include="app\template\modules\layermorph\layer-morph.directive.js" />
+    <Content Include="app\template\modules\layermorph\layer-morph.service.js" />
+    <Content Include="app\template\modules\layout\header-nav.controller.js" />
+    <Content Include="app\template\modules\layout\ui-sidebar.directive.js" />
+    <Content Include="app\template\modules\loadingbar\loadingbar.config.js" />
+    <Content Include="app\template\modules\loadingbar\loadingbar.run.js" />
+    <Content Include="app\template\modules\ripple\ripple.directive.js" />
+    <Content Include="app\template\modules\routes\routes.config.js" />
+    <Content Include="app\template\modules\routes\routes.provider.js" />
+    <Content Include="app\template\modules\routes\routes.run.js" />
+    <Content Include="app\template\modules\translator\translator.config.js" />
+    <Content Include="app\template\modules\translator\translator.service.js" />
+    <Content Include="app\template\vendor\modernizr\modernizr.custom.js" />
+    <Content Include="app\template\views\app-dock.html" />
+    <Content Include="app\template\views\app-fh.html" />
+    <Content Include="app\template\views\app.html" />
+    <Content Include="app\template\views\dashboard.html" />
+    <Content Include="app\template\views\layout.columns.html" />
+    <Content Include="app\template\views\login.html" />
+    <Content Include="app\template\views\footer.html" />
+    <Content Include="app\template\views\layer-search.html" />
+    <Content Include="app\template\views\settings.html" />
+    <Content Include="app\template\views\sidebar.html" />
+    <Content Include="app\template\views\top-navbar-dock.html" />
+    <Content Include="app\template\views\top-navbar.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\services\" />
+    <Folder Include="assets\js\Constant\" />
+    <Folder Include="assets\js\Directive\" />
+    <Folder Include="assets\js\Filter\" />
+    <Folder Include="assets\js\Services\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62809</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62809/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
